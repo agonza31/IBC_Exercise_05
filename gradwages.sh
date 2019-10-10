@@ -1,4 +1,4 @@
-# Usage: gradwages.sh 12 16
+# Usage: bash gradwages.sh 12 16
 
 #The minimum wages of 12 years
 val1=$(cat wages.csv | cut -d , -f 3,4 | grep  "$1," | sort -n -k 2 -t , | head -n 1 | cut -d , -f 2)
